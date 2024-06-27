@@ -1,0 +1,11 @@
+#progress-container{
+    background-color: #000000;   
+    position: fixed;
+    margin-top: 2vh;
+    overflow: hidden;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
