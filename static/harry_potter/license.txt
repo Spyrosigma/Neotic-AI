@@ -1,0 +1,11 @@
+Model Information:
+* title:	Harry Potter
+* source:	https://sketchfab.com/3d-models/harry-potter-9e546d0de09d4bd4b54e5f705b568769
+* author:	Matthew Tew (https://sketchfab.com/matt1279797)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Harry Potter" (https://sketchfab.com/3d-models/harry-potter-9e546d0de09d4bd4b54e5f705b568769) by Matthew Tew (https://sketchfab.com/matt1279797) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
