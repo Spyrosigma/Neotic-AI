@@ -6,7 +6,7 @@ const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 
 renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.setClearColor(0x000000,1);
+renderer.setClearColor(0x000000, 1);
 renderer.setPixelRatio(window.devicePixelRatio);
 
 renderer.shadowMap.enabled = true;
@@ -25,7 +25,7 @@ controls.enablePan = false;
 controls.minDistance = 3.5;
 controls.maxDistance = 25;
 controls.minPolarAngle = 0.5;
-controls.maxPolarAngle = 1.6 ;
+controls.maxPolarAngle = 1.6;
 controls.autoRotate = false;
 controls.autoRotateSpeed = 10.5;
 controls.target = new THREE.Vector3(0, 2.35, 0);
@@ -34,8 +34,8 @@ controls.update();
 const groundGeometry = new THREE.PlaneGeometry(20, 20, 32, 32);
 groundGeometry.rotateX(-Math.PI / 2);
 const groundMaterial = new THREE.MeshStandardMaterial({
-    color: 0x00000,
-    side: THREE.DoubleSide
+  color: 0x00000,
+  side: THREE.DoubleSide
 });
 
 const groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
@@ -78,18 +78,18 @@ loader.load('scene.gltf', (gltf) => {
   mesh.position.set(0, 0.4, 1.5);
   scene.add(mesh);
 
-  document.getElementById('progress-container').style.display = 'none';
+  document.getElementById('progress-container').style.display = 'auto' ;
 }, (xhr) => {
   console.log(`loading ${xhr.loaded / xhr.total * 100}%`);
 }, (error) => {
   console.error(error);
 });
 
-window.addEventListener('resize', () => {
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
-});
+// window.addEventListener('resize', () => {
+//   camera.aspect = window.innerWidth / window.innerHeight;
+//   camera.updateProjectionMatrix();
+//   renderer.setSize(window.innerWidth, window.innerHeight);
+// });
 
 function animate() {
   requestAnimationFrame(animate);

@@ -1,11 +1,12 @@
-#progress-container{
-    background-color: #000000;   
+nav{
+    background-color: #fdfdfd;
     position: fixed;
-    margin-top: 2vh;
-    overflow: hidden;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
 }
-
 body{
     background-color: rgb(0, 0, 0);
     overflow: hidden;
+    margin: 1vh;
 }
