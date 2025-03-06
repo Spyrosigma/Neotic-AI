@@ -43,20 +43,20 @@ groundMesh.castShadow = false;
 groundMesh.receiveShadow = true;
 scene.add(groundMesh);
 
-const spotLight = new THREE.SpotLight(0xffffff, 8000, 5000, 0.15, 1.56);
-spotLight.position.set(0, 25, 20);
+const spotLight = new THREE.SpotLight(0xffffff, 8000, 5000, 0.35, 1.56);
+spotLight.position.set(30, 30, 30);
 spotLight.castShadow = true;
 spotLight.shadow.bias = -0.0001;
 scene.add(spotLight);
 
 
-const spotLight2 = new THREE.SpotLight(0xffffff, 1000, 5000, 0.15, 1.56);
+const spotLight2 = new THREE.SpotLight(0xffffff, 1000, 5000, 0.35, 1.56);
 spotLight2.position.set(10, 15, 10);
 spotLight2.castShadow = true;
 spotLight2.shadow.bias = -0.0001;
 scene.add(spotLight2);
 
-const spotLight3 = new THREE.SpotLight(0xffffff, 1000, 5000, 0.15, 1.56);
+const spotLight3 = new THREE.SpotLight(0xffffff, 1000, 5000, 0.35, 1.56);
 spotLight3.position.set(-10, 15, 10);
 spotLight3.castShadow = false;
 spotLight3.shadow.bias = -0.0001;
@@ -74,7 +74,6 @@ loader.load('scene.gltf', (gltf) => {
       child.receiveShadow = true;
     }
   });
-
   mesh.position.set(0, 0.4, 1.5);
   scene.add(mesh);
 

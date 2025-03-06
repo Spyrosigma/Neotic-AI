@@ -4,7 +4,7 @@ import os
 
 
 client = ElevenLabs(
-  api_key= os.getenv('ELEVEN_API_KEY') , # Defaults to ELEVEN_API_KEY
+  api_key= os.getenv('ELEVEN_API_KEY') ,
 )
 
 audio = client.generate(
@@ -42,8 +42,8 @@ client = ElevenLabs(
 )
 
 def text_stream():
-    yield "Hi there, I'm Eleven "
-    yield "I'm a text to speech API "
+    yield "Hi there, I'm Satyam, Your next level AI developer!"
+    yield "I'm building a AI SaaS which helps people to talk to their favourite movie / Web-series character in real-time. "
 
 audio_stream = client.generate(
     text=text_stream(),
